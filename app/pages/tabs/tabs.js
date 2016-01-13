@@ -1,6 +1,6 @@
 import {Page} from 'ionic/ionic';
 import {HomePage} from '../home/home';
-import {DefaultPage} from '../default/default';
+import {TopFamily} from '../topfamily/topfamily';
 import {StaticPage} from '../statics/statics';
 
 
@@ -13,7 +13,7 @@ export class TabsPage {
     // this tells the tabs component which Pages
     // should be each tab's root Page
     this.homeRoot = HomePage;
-    this.defaultRoot = DefaultPage;
+    this.topfamilyRoot = TopFamily;
     this.staticRoot = StaticPage;
 
   }
