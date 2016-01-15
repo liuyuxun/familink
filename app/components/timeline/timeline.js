@@ -1,4 +1,5 @@
-import {Component} from 'angular2/core';
+import {Component,ElementRef} from 'angular2/core';
+import {SlideGesture} from 'ionic/gestures/slide-gesture';
 @Component({
   selector: 'time-line',
   template: `
@@ -44,4 +45,7 @@ export class TimeLine {
                 {name:'lyx',desc:'dddd',birth:'1985'}
                 ]
         }];
+    constructor(e:ElementRef){
+        console.log(e.nativeElement);
+    }
 }
